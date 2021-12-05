@@ -1,0 +1,130 @@
+[
+  {
+    "id": 0,
+    "name": "Pencil",
+    "picture": "https://image-cc.s3.amazonaws.com/pencil.jpg",
+    "company": "Onami",
+    "date": "1910-03-10",
+    "price": 0.001
+  },
+  {
+    "id": 1,
+    "name": "Airpod",
+    "picture": "https://image-cc.s3.amazonaws.com/airpod.jpg",
+    "company": "Banana",
+    "date": "2016-10-26",
+    "price": 0.05
+  },
+  {
+    "id": 2,
+    "name": "Shoes",
+    "picture": "https://image-cc.s3.amazonaws.com/shoe.jpg",
+    "company": "Aike",
+    "date": "2021-11-19",
+    "price": 0.006
+  },
+  {
+    "id": 3,
+    "name": "Eraser",
+    "picture": "https://image-cc.s3.amazonaws.com/erase.jpg",
+    "company": "Jambo",
+    "date": "1925-08-07",
+    "price": 0.006
+  },
+  {
+    "id": 4,
+    "name": "Pants",
+    "picture": "https://image-cc.s3.amazonaws.com/jean.jpg",
+    "company": "Lavis",
+    "date": "1986-08-08",
+    "price": 0.02
+  },
+  {
+    "id": 5,
+    "name": "T-shirt",
+    "picture": "https://image-cc.s3.amazonaws.com/tshirt.jpg",
+    "company": "Mommyhand",
+    "date": "2021-11-19",
+    "price": 0.1
+  },
+  {
+    "id": 6,
+    "name": "Mouse",
+    "picture": "https://image-cc.s3.amazonaws.com/mouse.jpg",
+    "company": "Jerry",
+    "date": "1996-12-10",
+    "price": 0.006
+  },
+  {
+    "id": 7,
+    "name": "Sunjae Lee",
+    "picture": "https://image-cc.s3.amazonaws.com/lee.jpg",
+    "company": "Slave Comp",
+    "date": "1998-06-06",
+    "price": 0.00025
+  },
+  {
+    "id": 8,
+    "name": "Headset",
+    "picture": "https://image-cc.s3.amazonaws.com/headset.jpg",
+    "company": "Pony",
+    "date": "2002-08-15",
+    "price": 0.08
+  },
+  {
+    "id": 9,
+    "name": "Cell Phone",
+    "picture": "https://image-cc.s3.amazonaws.com/phone.jpg",
+    "company": "Somecall",
+    "date": "1999-05-05",
+    "price": 0.04
+  },
+  {
+    "id": 10,
+    "name": "Pencil Case",
+    "picture": "https://image-cc.s3.amazonaws.com/pencilcase.jpg",
+    "company": "Onami",
+    "date": "2001-11-08",
+    "price": 0.002
+  },
+  {
+    "id": 11,
+    "name": "Laptop",
+    "picture": "https://image-cc.s3.amazonaws.com/notebook.jpg",
+    "company": "Jamsung",
+    "date": "2019-09-19",
+    "price": 0.26
+  },
+  {
+    "id": 12,
+    "name": "Apple",
+    "picture": "https://image-cc.s3.amazonaws.com/apple.jpg",
+    "company": "JJobJJobs",
+    "date": "2021-11-19",
+    "price": 0.0005
+  },
+  {
+    "id": 13,
+    "name": "Keyboard",
+    "picture": "https://image-cc.s3.amazonaws.com/keyboard.jpg",
+    "company": "Nike",
+    "date": "2018-09-17",
+    "price": 0.02
+  },
+  {
+    "id": 14,
+    "name": "Uhyeong Jo",
+    "picture": "https://image-cc.s3.amazonaws.com/jo.jpg",
+    "company": "Slave Comp",
+    "date": "1998-12-12",
+    "price": 2.6
+  },
+  {
+    "id": 15,
+    "name": "Stand",
+    "picture": "https://image-cc.s3.amazonaws.com/stand.jpg",
+    "company": "A-S",
+    "date": "2028-10-12",
+    "price": 0.013
+  }
+]
