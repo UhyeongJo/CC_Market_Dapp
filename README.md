@@ -68,7 +68,7 @@ $ truffle compile
 ```
 $ nano migrations/2_deploy_contracts.js
 ```
-![text](CC_src/CC_src/RDM_img/5_Migrationcode.PNG)
+![text](CC_src/RDM_img/5_Migrationcode.PNG)
 
 ### 2.4 Ganache 실행 및 설정
 >Setting -> SERVER 속 PORT Number를 8545로 지정해주고 RESTART 클릭
