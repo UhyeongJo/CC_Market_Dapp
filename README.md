@@ -39,7 +39,7 @@ $ cd Market_DApp
 ```
 $ truffle unbox pet-shop
 ```
-![text](RDM_img/1_pet-shop.png)
+![text](CC_src/RDM_img/1_pet-shop.png)
 
 Box에는 Truffle에서 제공해주는 Framework는 DApp을 개발하는데 다양한 모듈이 담겨있다.
 
@@ -56,19 +56,19 @@ $ rm src/pets.json
 ```
 $ nano contracts/LeaseProperty.sol
 ```
-![text](RDM_img/3_BuyProduct-(LeaseProperty).PNG)
+![text](CC_src/RDM_img/3_BuyProduct-(LeaseProperty).PNG)
 
 ### 2.2 Smart Contract 컴파일
 ```
 $ truffle compile
 ```
-![text](RDM_img/4_SmartContractCompile.PNG)
+![text](CC_src/RDM_img/4_SmartContractCompile.PNG)
 
 ### 2.3 마이그레이션 코드 작성
 ```
 $ nano migrations/2_deploy_contracts.js
 ```
-![text](RDM_img/5_Migrationcode.PNG)
+![text](CC_src/CC_src/RDM_img/5_Migrationcode.PNG)
 
 ### 2.4 Ganache 실행 및 설정
 >Setting -> SERVER 속 PORT Number를 8545로 지정해주고 RESTART 클릭
@@ -76,33 +76,33 @@ $ nano migrations/2_deploy_contracts.js
 ```
 $ truffle migrate
 ```
-![text](RDM_img/6_SmartContractMigrate.PNG)
+![text](CC_src/RDM_img/6_SmartContractMigrate.PNG)
 >연결 후 Ganache CURRENT BLOCK 개수 변동 (0 -> 4)  
 >트렌잭션 수수료로 인하여 첫 번째 블럭의 BALANCE 감소
-![text](RDM_img/7_ChangeBlockchainStatus.jpg)
+![text](CC_src/RDM_img/7_ChangeBlockchainStatus.jpg)
 ### 2.6 Test 파일 생성
 ```
 $ nano test/TestLeaseProperty.sol
 ```
-![text](RDM_img/8_TestBuyProduct-(TestLeaseProperty).PNG)
+![text](CC_src/RDM_img/8_TestBuyProduct-(TestLeaseProperty).PNG)
 
 ### 2.7 Test 파일 실행
 ```
 $ truffle test
 ```
-![text](RDM_img/9_Test.PNG)  
+![text](CC_src/RDM_img/9_Test.PNG)  
 
 ## 3. 인터페이스 및 DApp 
 ### 3.1 app.js 파일 수정
 ```
 $ nano src/js/app.js
 ```
-![text](RDM_img/10_appjs.PNG)
+![text](CC_src/RDM_img/10_appjs.PNG)
 ### 3.2 index.html 파일 수정
 ```
 $ nano src/index.html
 ```
-![text](RDM_img/11_indexhtml.PNG)
+![text](CC_src/RDM_img/11_indexhtml.PNG)
 
 ### 3.2 properties.json 파일 수정
 ```
@@ -110,7 +110,7 @@ $ nano src/properties.json
 ```
 >AWS Bucket을 사용하여 로컬환경 DApp에서 이미지 확인 가능  
 
-![text](RDM_img/12_s3b.PNG)
+![text](CC_src/RDM_img/12_s3b.PNG)
 
 ### 3.3 MetaMask (Chrome)
 - [MetaMask][MetaMask] 설치
@@ -123,15 +123,15 @@ $ nano src/properties.json
 ```
 $ npm run dev
 ```
-![text](RDM_img/14_rundev.PNG)   
+![text](CC_src/RDM_img/14_rundev.PNG)   
 - 메인화면  
-![text](RDM_img/15_web.PNG)
+![text](CC_src/RDM_img/15_web.PNG)
 - MetaMask 정상 연결 성공
-![text](RDM_img/16_meta web.PNG)
+![text](CC_src/RDM_img/16_meta web.PNG)
 - 구매  
-![text](RDM_img/17_buy.PNG)
+![text](CC_src/RDM_img/17_buy.PNG)
 - 구매완료  
-![text](RDM_img/18_buycompelte.jpg)
+![text](CC_src/RDM_img/18_buycompelte.jpg)
 >DApp이 구동되고 MetaMask 연결되면 거래 가능
 >이력을 보면 트랜잭션을 정상 승인되었음을 알 수 있다.
 
@@ -147,13 +147,13 @@ $ npm run dev
 ### 4.2 탄력적 IP Address 생성
 > https://console.aws.amazon.com/vpc/
 
-![text](RDM_img/aws_blockchain_template/1_ElasticIP.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/1_ElasticIP.PNG)
 
 ### 4.3 VPC 생성
 > EthereumVPC [VPC] : Virtual Private Cloud
 >> Private Network를 구축할 수 있도록 해주는 AWS 도구
 
-![text](RDM_img/aws_blockchain_template/2_Vpc.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/2_Vpc.PNG)
 
 ### 4.4 Subnet 생성
 > EthereumPubSub1, EthereumPubSub2
@@ -162,47 +162,47 @@ $ npm run dev
 > EthereumPvtSub
 >> [Private Subnet] : 자신의 고유 IP만을 가지고 있고, 외부 인터넷과 연결은 불가능하며 Subnet끼리만 트래픽 전송 가능하다.
 
-![text](RDM_img/aws_blockchain_template/3_Subnet.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/3_Subnet.PNG)
 
 ### 4.5 Security Group 생성
 > https://console.aws.amazon.com/ec2/
 
 > 보안 그룹은 방화벽 역활을 하면서 리소스에 대한 인바운드 및 아웃바운드 트래픽을 제어한다.
 
-![text](RDM_img/aws_blockchain_template/4_SecurityGroup.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/4_SecurityGroup.PNG)
 ***
 > ✔︎ EthereumEC2_SG
 >> [EC2 인스턴스용 보안 그룹] : EC2 인스턴스에 대한 트래픽 제어
 
-![text](RDM_img/aws_blockchain_template/5_EC2_SG_Inbound.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/5_EC2_SG_Inbound.PNG)
 ***
 > ✔︎ EthereumALB_SG
 >> [Application Load Balancer용 보안 그룹] : Application Load Balancer, EC2 인스턴스 및 접속 호스트 간의 트래픽을 제어한다.
 
-![text](RDM_img/aws_blockchain_template/6_ALB_SG_Inbound.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/6_ALB_SG_Inbound.PNG)
 
 ### 4.6 IAM 역활 생성
 > https://console.aws.amazon.com/iam/
 
 > Amazon ECS에 대한 IAM 역활과 EC2 인스턴스 프로파일을 지정하여 연결된 권한 정책을 사용하면 AWS리소스 및 인스턴스가 다른 AWS 리소스와 상호 작용할 수 있다.
 
-![text](RDM_img/aws_blockchain_template/7_IAM_Role.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/7_IAM_Role.PNG)
 
 ### 4.7 접속 호스트 생성
 > Ethereum 네트워크에서 웹 인터페이스 및 인스턴스에 연결하는 데 사용하는 EC2 인스턴스이며 일종의 보안을 위해 침입 차단 소프트웨어가 설치가 되어 내부와 외부 네트워크 사이에서 일종의 게이트 역활을 수행하는 호스트이다.
 
-![text](RDM_img/aws_blockchain_template/8_EC2_Instance.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/8_EC2_Instance.PNG)
 
 ### 4.8 Ethereum 네트워크 생성
 > https://aws.amazon.com/ko/blockchain/templates/getting-started/
 
 > 위 링크에서 최신 Ethereum용 AWS 블록체인 템플릿을 AWS CloudFormation 콘솔에 연결한다.
 
-![text](RDM_img/aws_blockchain_template/9_CloudFormation_Stack_with_template.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/9_CloudFormation_Stack_with_template.PNG)
 
 > ✔︎ 이를 통해 Ethereum 네트워크 생성을 완료한 것을 확인할 수 있다.
 
-![text](RDM_img/aws_blockchain_template/10_CloudFormation_Stack_Complete.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/10_CloudFormation_Stack_Complete.PNG)
 
 ### 4.9 이더리움 네트워크에 접속하기
 
@@ -212,25 +212,25 @@ $ ssh -i /ex-key-pair.pem ec2-user@bastion-host-dns -D 9001
 ```
 > 위의 명령어로 SSH를 사용하여 SSH 포트포워딩과 함께 Bastion Host에 접속 가능하다.
 
-![text](RDM_img/aws_blockchain_template/12_Connect_to_the_bastion_with_ssh.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/12_Connect_to_the_bastion_with_ssh.PNG)
 
 #### &#127873; Ethereum Network URL에 접속
 > Ethereum 네트워크 URL에 SSH 터널을 사용하도록 FoxyProxy를 구성
 
-![text](RDM_img/aws_blockchain_template/13_Add_proxy_with_FoxyProxy.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/13_Add_proxy_with_FoxyProxy.PNG)
 
 > 아래의 Stack Output 탭의 링크를 통해 Etheruem URL에 연결
 
-![text](RDM_img/aws_blockchain_template/10_CloudFormation_Stack_Complete.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/10_CloudFormation_Stack_Complete.PNG)
 
 ### 4.10 Ethereum URL 접속
 > ✔︎ EthStats
 
-![text](RDM_img/aws_blockchain_template/14_EthStats.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/14_EthStats.PNG)
 ***
 > ✔︎ EthExplorer
 
-![text](RDM_img/aws_blockchain_template/15_EthExplorer.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/15_EthExplorer.PNG)
 
 ## 5. AWS Ethereum 네트워크에 DApp 이관 및 구동
 ### 5.1 Truffle HDWallet Provider Private Key 설치
@@ -238,7 +238,7 @@ $ ssh -i /ex-key-pair.pem ec2-user@bastion-host-dns -D 9001
 $ npm install truffle-hdwallet-provider-privkey
 ```
 
-![text](RDM_img/aws_blockchain_template/16_Truffle_HDWallet_PRovider_Private_Key.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/16_Truffle_HDWallet_PRovider_Private_Key.PNG)
 
 ### 5.2 truffle-config.js 파일 수정
 ```
@@ -268,7 +268,7 @@ module.exports = {
 };
 ```
 
-![text](RDM_img/aws_blockchain_template/17_truffle-config.PNG)
+![text](CC_src/RDM_img/aws_blockchain_template/17_truffle-config.PNG)
 
 ### 5.3 AWS Ethereum Blockchain Network에 Migration 하기
 ```
