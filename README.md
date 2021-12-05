@@ -14,7 +14,7 @@ Truffle Framework와 Ganache(Virtual Ethereum-RPC)를 사용하여 Smart Contrac
 또한 저희의 최종 결과물은 개발한 DApp을 배포하는 운영환경을 이더리움 테스트 네트워크(Ganache)에서 AWS 이더리움 프라이빗 블록체인 네트워크를 구축한 후 마이그레이션하는 것이 목표입니다.
 
 >간단한 다이어그램
->![text](CC_src/RDM_img/dia.jpg)
+>![text](CC_src/RDM_img/dia1.jpg)
 
 ### * 멤버 이름 및 파트 소개  
  - 20175257 스마트IoT학과 조우형 
